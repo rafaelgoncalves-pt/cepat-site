@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    font-family: neue-haas-grotesk-text, Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: neue-haas-grotesk-text, Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p, caption, a {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 300ms;
+}
+
+a.link:hover {
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li, ul dt, ul dd, dl li, dl dt, dl dd {
+    margin: 0;
+    display: block;
+    height: fit-content;
+}
+
+dl dd {
+    margin-bottom: 1em;
+}
+
+table th, table tr, table td {
+    text-align: left;
+}
+
+small {
+    font-size: 60%;
+}
+
+strong {
+    font-weight: 500;
+}
+
+address {
+    font-style: normal;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+img.expand {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img.rounded {
+  border-radius: 2px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+caption {
+    text-align: left;
+}
+
+::selection {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}

@@ -1,0 +1,110 @@
+/* 
+	Type Faces
+*/
+
+/* 
+	Text
+*/
+.t-bold {
+	font-weight: 700;
+}
+
+.t-italic {
+	font-style: italic;
+}
+
+.t-uppercase {
+	text-transform: uppercase;
+}
+
+.t-lowercase {
+	text-transform: lowercase;
+}
+
+.t-left {
+	text-align: left;
+}
+
+.t-center {
+	text-align: center;
+}
+
+.t-right {
+	text-align: right;
+}
+
+
+/* 
+	Type Sizes 
+*/
+
+.t-min {
+	font-size: 0.6rem;
+	line-height: 1.1em;
+}
+
+.t-caption {
+	font-size: 0.80rem;
+	line-height: 1.1em;
+}
+
+.t-body {
+	font-size: 0.95rem;
+	line-height: 1.25em;
+}
+
+.t-h2 {
+	font-size: 1.35rem;
+	line-height: 1.25em;
+}
+
+.t-h1 {
+	font-size: 2rem;
+	line-height: 1.15em;
+}
+
+/* Desktop */
+@media only screen and (min-width: 64rem) {
+	.t-min {
+		font-size: 0.6rem;
+	}
+
+	.t-caption {
+		font-size: 0.8rem;
+	}
+
+	.t-body {
+		font-size: 1.1rem;
+	}
+
+	.t-h2 {
+		font-size: 1.35rem;
+	}
+
+	.t-h1 {
+		font-size: 2.5rem;
+	}
+}
+
+/* Desktop Large */
+@media only screen and (min-width: 100rem) {
+	.t-min {
+		font-size: 0.75rem;
+	}
+
+	.t-caption {
+		font-size: 1rem;
+	}
+
+	.t-body {
+		font-size: 1.25rem;
+	}
+
+	.t-h2 {
+		font-size: 1.5rem;
+	}
+
+	.t-h1 {
+		font-size: 2rem;
+	}
+}
