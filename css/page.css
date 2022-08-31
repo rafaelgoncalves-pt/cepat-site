@@ -1,0 +1,50 @@
+/* 
+    Header
+*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header-logo {
+    grid-column: 1/-2;
+}
+
+/* 
+    Backdrop
+*/
+.page-backdrop {
+    background-image: url(../img/backdrop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.page-backdrop h2,
+.page-backdrop ul,
+.page-backdrop li {
+    grid-column: 1/-1;
+}
+
+.page-backdrop li {
+    margin-bottom: 1em;
+}
+
+/* 
+    Intro
+*/
+.page-intro h4,
+.page-intro p,
+.page-intro a,
+.page-intro li {
+    grid-column: 1/-1;
+}
+
+.page-intro a {
+    margin: 2rem auto;
+}
+
+.page-intro li:not(:last-of-type) {
+    margin-bottom: 4rem;
+}
