@@ -1,3 +1,8 @@
+:root {
+    --primaryColor: #b0b5b4;
+    --secondaryColor: #f0f0f0;
+}
+
 /* 
     Colors (c)
 */
@@ -19,6 +24,15 @@
 
 .c-lightgray {
     color: rgb(163, 163, 163);
+}
+
+/* 
+    Elements
+*/
+a.button {
+    width: fit-content;
+    padding: .5rem .7rem;
+    border: 2px solid black;
 }
 
 /* 
@@ -54,7 +68,6 @@
     justify-content: center;
 }
 
-
 /* 
     Padding 
 */
@@ -68,15 +81,15 @@
 }
 
 .pad-m {
-    padding: 32px;
+    padding: 1.5rem 14px 6rem;
 }
 
 .pad-l {
-    padding: 48px;
+    padding: 48px 14px;
 }
 
 .pad-xl {
-    padding: 64px;
+    padding: 8rem 14px;
 }
 
 /* 
@@ -88,7 +101,7 @@
 }
 
 .mar-s {
-    margin: 16px;
+    margin: 1.3rem 0;
 }
 
 .mar-m {
@@ -96,11 +109,11 @@
 }
 
 .mar-l {
-    margin: 48px;
+    margin: 4rem 0 5rem;
 }
 
 .mar-xl {
-    margin: 64px;
+    margin: 3rem 0;
 }
 
 .mar-top-xs {

@@ -1,6 +1,20 @@
 /* 
 	Type Faces
 */
+@font-face {
+	font-family: CooperHewitt-Medium;
+	src: url(../fonts/CooperHewitt-Medium.otf);
+}
+
+@font-face {
+	font-family: CooperHewitt-Semibold;
+	src: url(../fonts/CooperHewitt-Semibold.otf);
+}
+
+@font-face {
+	font-family: RobotoMono-Bold;
+	src: url(../fonts/RobotoMono-Bold.ttf);
+}
 
 /* 
 	Text
@@ -39,28 +53,35 @@
 */
 
 .t-min {
-	font-size: 0.6rem;
-	line-height: 1.1em;
+	font-family: RobotoMono-Bold, Arial, Helvetica, sans-serif;
+	font-size: .8rem;
+	line-height: 1em;
+	text-transform: uppercase;
 }
 
 .t-caption {
-	font-size: 0.80rem;
-	line-height: 1.1em;
+	font-family: CooperHewitt-Semibold, Arial, Helvetica, sans-serif;
+	font-size: 0.8rem;
+	line-height: 1.25em;
 }
 
-.t-body {
-	font-size: 0.95rem;
+.t-body,
+.t-h3 {
+	font-family: CooperHewitt-Semibold, Arial, Helvetica, sans-serif;
+	font-size: 1rem;
 	line-height: 1.25em;
 }
 
 .t-h2 {
-	font-size: 1.35rem;
-	line-height: 1.25em;
+	font-family: CooperHewitt-Medium, Arial, Helvetica, sans-serif;
+	font-size: 1.8rem;
+	line-height: 1.15em;
 }
 
 .t-h1 {
+	font-family: CooperHewitt-Medium, Arial, Helvetica, sans-serif;
 	font-size: 2rem;
-	line-height: 1.15em;
+	line-height: 1.1em;
 }
 
 /* Desktop */
