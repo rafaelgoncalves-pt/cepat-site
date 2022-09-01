@@ -48,3 +48,40 @@ header {
 .page-intro li:not(:last-of-type) {
     margin-bottom: 4rem;
 }
+
+/* 
+    Project
+*/
+.project-backdrop {
+    background-image: url(../img/project.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.project-backdrop > * {
+    grid-column: 1/-1;
+}
+
+.project-backdrop a {
+    opacity: .7;
+}
+
+.text-wrapper {
+    display: flex;
+}
+
+.project-content {
+    background-color: #201e1c;
+}
+
+.project-content > * {
+    grid-column: 1/-1;
+}
+
+.project-content a {
+    margin: 0 auto 2.5rem;
+}
+
+.project-content p {
+    margin: 1rem 0 3rem;
+}

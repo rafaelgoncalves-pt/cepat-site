@@ -18,6 +18,10 @@
     color: rgb(163, 163, 163);
 }
 
+.c-white {
+    color: whitesmoke;
+}
+
 .c-gray {
     color: rgb(163, 163, 163);
 }
@@ -30,9 +34,14 @@
     Elements
 */
 a.button {
+    display: flex;
     width: fit-content;
     padding: .5rem .7rem;
     border: 2px solid black;
+}
+
+a.b-invert {
+    border: 2px solid #f0f0f0;
 }
 
 /* 
@@ -71,9 +80,8 @@ a.button {
 /* 
     Padding 
 */
-
 .pad-xs {
-    padding: 16px;
+    padding: 1rem 14px;
 }
 
 .pad-s {
@@ -97,15 +105,15 @@ a.button {
 */
 
 .mar-xs {
-    margin: 12px;
+    margin: 1rem 0 2rem;
 }
 
 .mar-s {
-    margin: 1.3rem 0;
+    margin: 1.5rem 0;
 }
 
 .mar-m {
-    margin: 32px;
+    margin: 2rem 0;
 }
 
 .mar-l {

@@ -66,12 +66,13 @@
 }
 
 .t-body,
-.t-h3 {
+.t-h4 {
 	font-family: CooperHewitt-Semibold, Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	line-height: 1.25em;
 }
 
+.t-h3,
 .t-h2 {
 	font-family: CooperHewitt-Medium, Arial, Helvetica, sans-serif;
 	font-size: 1.8rem;
