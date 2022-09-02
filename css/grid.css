@@ -4,3 +4,12 @@
     column-gap: 1rem;
     grid-template-columns: repeat(6, 1fr);
 }
+
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
+    .grid-l,
+    .grid-xl {
+        column-gap: 1rem;
+        grid-template-columns: repeat(12, 1fr);
+    }
+}

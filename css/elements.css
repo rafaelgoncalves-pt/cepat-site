@@ -57,6 +57,7 @@ ul li, ul dt, ul dd, dl li, dl dt, dl dd {
     margin: 0;
     display: block;
     height: fit-content;
+    line-height: 100%;
 }
 
 dl dd {

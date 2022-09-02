@@ -1,15 +1,39 @@
 /* 
     Header
 */
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
 
-#header-logo {
+.header-nav {
+    display: none;
+}
+
+.header-logo {
     grid-column: 1/-2;
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
+    .header-logo {
+        grid-column: 1/5;
+    }
+
+    .header-nav {
+        display: block;
+        grid-column: 6/-1;
+    }
+
+    .header-nav ul {
+        display: flex;
+    }
+
+    .header-nav li {
+        width: calc(100%/6);
+    }
 }
 
 /* 
@@ -29,6 +53,14 @@ header {
 
 .page-backdrop li {
     margin-bottom: 1em;
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
+    .page-backdrop h2,
+    .page-backdrop li {
+        grid-column: 6/-1;
+    }
 }
 
 /* 

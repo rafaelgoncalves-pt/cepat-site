@@ -2,18 +2,27 @@
 	Type Faces
 */
 @font-face {
-	font-family: CooperHewitt-Medium;
-	src: url(../fonts/CooperHewitt-Medium.otf);
+	font-family: CooperHewitt;
+	src: url(../fonts/CooperHewitt-Medium.otf) format(opentype);
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: normal;
 }
 
 @font-face {
-	font-family: CooperHewitt-Semibold;
-	src: url(../fonts/CooperHewitt-Semibold.otf);
+	font-family: CooperHewitt;
+	src: url(../fonts/CooperHewitt-Semibold.otf) format(opentype);
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: normal;
 }
 
 @font-face {
 	font-family: RobotoMono-Bold;
-	src: url(../fonts/RobotoMono-Bold.ttf);
+	src: url(../fonts/RobotoMono-Bold.ttf) format(truetype);
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: normal;
 }
 
 /* 
