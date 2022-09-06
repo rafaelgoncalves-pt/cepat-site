@@ -1,6 +1,8 @@
 :root {
     --primaryColor: #b0b5b4;
     --secondaryColor: #f0f0f0;
+
+    --columnMobile: calc(calc(100vw - 84px) / 5 )
 }
 
 /* 
@@ -80,6 +82,10 @@ a.b-invert {
 /* 
     Padding 
 */
+.pad-xxs {
+    padding: 1rem 0;
+}
+
 .pad-xs {
     padding: 1rem 14px;
 }

@@ -6,6 +6,15 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
+}
+
+.header.page {
+    background-color: var(--primaryColor);
+}
+
+.header.project {
+    background-color: #201e1c;
 }
 
 .header-nav {
@@ -66,7 +75,7 @@
 /* 
     Intro
 */
-.page-intro h4,
+.page-intro h3,
 .page-intro p,
 .page-intro a,
 .page-intro li {
@@ -84,8 +93,9 @@
 /* 
     Project
 */
+/* Backdrop */
 .project-backdrop {
-    background-image: url(../img/project.png);
+    background-image: url(../img/project/backdrop.png);
     background-size: cover;
     background-position: center;
 }
@@ -102,6 +112,7 @@
     display: flex;
 }
 
+/* Content */
 .project-content {
     background-color: #201e1c;
 }
@@ -116,4 +127,161 @@
 
 .project-content p {
     margin: 1rem 0 3rem;
+}
+
+/* Gallery */
+.project-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100vw;
+    background-color: #201e1c;
+    margin: 0 -14px;
+    scroll-snap-type: x mandatory
+}
+
+.project-gallery img {
+    margin-left: 14px;
+    width: calc(calc(var(--columnMobile) * 5) + 36px);
+    height: 66vw;
+    scroll-snap-align: center;
+}
+
+.project-gallery img:last-of-type {
+    margin-right: 14px;
+}
+
+/* Picture */
+.page-project > img {
+    width: 100%;
+    height: 150vw;
+    object-fit: cover;
+}
+
+
+/* 
+    Mission
+*/
+.page-mission > * {
+    grid-column: 1/-1;
+}
+
+.page-mission_list {
+    padding-left: 0;
+    list-style: none;
+    counter-reset: item;
+}
+
+.page-mission_list li {
+    grid-column: 1/-1;
+    counter-increment: item;
+    position: relative;
+    padding-left: var(--columnMobile);
+    margin-bottom: 1em;
+}
+
+.page-mission_list li:before {
+    content: counter(item);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 
+    Team
+*/
+.page-team h2,
+.page-team ul {
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+}
+
+.page-team_person {
+    padding-top: .5rem;
+    border-top: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.page-team_person img {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    width: var(--columnMobile);
+    height: var(--columnMobile);
+    mix-blend-mode: multiply;
+}
+
+.page-team_person h3,
+.page-team_person p,
+.page-team_person a {
+    grid-column: 2/-1;
+}
+
+.page-team_person p {
+    opacity: .5;
+    margin-bottom: 2em;
+}
+
+.page-team_person a:first-of-type {
+    margin-bottom: .25em;
+}
+
+
+/* 
+    Footer
+*/
+#footer {
+    background-color: black;
+    padding-bottom: 1rem;
+}
+
+#footer > * {
+    grid-column: 1/-1;
+}
+
+/* Contacts */
+.footer-contacts {
+    margin-bottom: 2rem;
+}
+
+.footer-contacts a {
+    display: block;
+}
+
+.footer-contacts a:first-of-type {
+    margin-top: 2em;
+}
+
+/* Partners */
+.footer-partners ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.footer-partners ul li:first-of-type {
+    min-width: 100%;
+    max-width: 100%;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid var(--primaryColor);
+    margin-bottom: 2rem;
+}
+
+.footer-partners img {
+    width: auto;
+    height: fit-content;
+    max-height: 1.75rem;
+    max-width: 80vw;
+    margin-bottom: 2.5rem;
+}
+
+/* Footnotes */
+.footer-footnotes {
+    margin-top: 4rem;
+}
+
+.footer-footnotes > p {
+    grid-column: 1/-1;
+    margin-bottom: 1em;
 }

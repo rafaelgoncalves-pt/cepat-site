@@ -74,10 +74,15 @@
 	line-height: 1.25em;
 }
 
-.t-body,
-.t-h4 {
+.t-body {
 	font-family: CooperHewitt-Semibold, Arial, Helvetica, sans-serif;
 	font-size: 1rem;
+	line-height: 1.25em;
+}
+
+.t-h4 {
+	font-family: CooperHewitt-Medium, Arial, Helvetica, sans-serif;
+	font-size: 1.25rem;
 	line-height: 1.25em;
 }
 
