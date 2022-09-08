@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: #201e1c;
+  color: var(--trecearyColor);
   font-size: 1em;
   line-height: 1.4;
 }

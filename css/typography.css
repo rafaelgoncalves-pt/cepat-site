@@ -80,6 +80,7 @@
 	line-height: 1.25em;
 }
 
+.t-h5,
 .t-h4 {
 	font-family: CooperHewitt-Medium, Arial, Helvetica, sans-serif;
 	font-size: 1.25rem;
@@ -99,33 +100,11 @@
 	line-height: 1.1em;
 }
 
-/* Desktop */
-@media only screen and (min-width: 64rem) {
+
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
 	.t-min {
-		font-size: 0.6rem;
-	}
-
-	.t-caption {
-		font-size: 0.8rem;
-	}
-
-	.t-body {
-		font-size: 1.1rem;
-	}
-
-	.t-h2 {
-		font-size: 1.35rem;
-	}
-
-	.t-h1 {
-		font-size: 2.5rem;
-	}
-}
-
-/* Desktop Large */
-@media only screen and (min-width: 100rem) {
-	.t-min {
-		font-size: 0.75rem;
+		font-size: .9rem;
 	}
 
 	.t-caption {
@@ -134,13 +113,28 @@
 
 	.t-body {
 		font-size: 1.25rem;
+		line-height: 1.3em;
+	}
+	
+	.t-h5 {
+		font-size: 1.75rem;
+	}
+	
+	.t-h4 {
+		font-size: 1.35rem;
+		line-height: 1.3em;
+	}
+
+	.t-h3 {
+		font-size: 2rem;
 	}
 
 	.t-h2 {
-		font-size: 1.5rem;
+		font-size: 2.3rem;
+		line-height: 1.1em;
 	}
 
 	.t-h1 {
-		font-size: 2rem;
+		font-size: 3.3rem;
 	}
 }

@@ -1,8 +1,10 @@
 :root {
     --primaryColor: #b0b5b4;
     --secondaryColor: #f0f0f0;
+    --trecearyColor: #201e1c;
 
-    --columnMobile: calc(calc(100vw - 84px) / 5 )
+    --columnMobile: calc(calc(100vw - 84px) / 5 );
+    --columnDesktop: calc(calc(100vw - 238px) / 16 );
 }
 
 /* 
@@ -90,10 +92,7 @@ a.b-invert {
     padding: 1rem 14px;
 }
 
-.pad-s {
-    padding: 20px;
-}
-
+.pad-s,
 .pad-m {
     padding: 1.5rem 14px 6rem;
 }
@@ -106,6 +105,20 @@ a.b-invert {
     padding: 8rem 14px;
 }
 
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
+    .pad-s {
+        padding: 2.5rem 14px 8rem;
+    }
+
+    .pad-m {
+        padding: 5rem 14px 12rem;
+    }
+
+    .pad-xl {
+        padding: 12.5rem 14px;
+    }
+}
 /* 
     Margins 
 */
@@ -136,6 +149,13 @@ a.b-invert {
 
 .mar-top-s {
     margin-top: 1rem;
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
+    .mar-l {
+        margin: 3rem 0;
+    }
 }
 
 /* 
