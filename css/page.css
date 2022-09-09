@@ -11,11 +11,13 @@
 }
 
 .header.page {
-    background-color: var(--primaryColor);
+    background: var(--primaryColor);
+    background: linear-gradient(0deg, rgba(176, 181, 180, 0) 0%, rgba(176, 181, 180, 1) 100%);
 }
 
 .header.project {
-    background-color: var(--trecearyColor);
+    background: var(--trecearyColor);
+    background: linear-gradient(0deg, rgba(32, 30, 28, 0) 0%, rgba(32, 30, 28, 1) 100%);
 }
 
 .header-nav {
@@ -52,7 +54,8 @@
     }
 
     .header.page .header-nav {
-        background-color: var(--primaryColor);
+        background: var(--primaryColor);
+        background: linear-gradient(0deg, rgba(176, 181, 180, 0) 0%, rgba(176, 181, 180, 1) 100%);
     }
 
     .header.page .header-nav a {
@@ -60,7 +63,8 @@
     }
 
     .header.project .header-nav{
-        background-color: var(--trecearyColor);
+        background: var(--trecearyColor);
+        background: linear-gradient(0deg, rgba(32, 30, 28, 0) 0%, rgba(32, 30, 28, 1) 100%);
     }
 
     .header.project .header-nav a {
@@ -194,7 +198,7 @@
 
 /* Desktop Media Query */
 @media screen and (min-width: 52rem) {
-    .project-backdrop h3 {
+    .project-backdrop h2 {
         grid-column: 7/-1;
         grid-row: 1;
         margin-bottom: 1em;
