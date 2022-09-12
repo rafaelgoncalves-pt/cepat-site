@@ -54,49 +54,55 @@
 */
 
 .t-min {
-	font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+	font-family: 'Roboto Mono', monospace;
 	font-size: .8rem;
 	line-height: 1em;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .t-caption {
-	font-family: CooperHewitt-Semibold, Arial, Helvetica, sans-serif;
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
 	font-size: 0.8rem;
 	line-height: 1.25em;
+	font-weight: 600;
 }
 
 .t-body {
-	font-family: CooperHewitt-Semibold, Arial, Helvetica, sans-serif;
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	line-height: 1.25em;
+	font-weight: 600;
 }
 
 .t-h5,
 .t-h4 {
-	font-family: CooperHewitt-Medium, Arial, Helvetica, sans-serif;
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
 	font-size: 1.25rem;
 	line-height: 1.25em;
+	font-weight: 500;
 }
 
 .t-h3,
 .t-h2 {
-	font-family: CooperHewitt-Medium, Arial, Helvetica, sans-serif;
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
 	font-size: 1.8rem;
 	line-height: 1.15em;
+	font-weight: 500;
 }
 
 .t-h1 {
-	font-family: CooperHewitt-Medium, Arial, Helvetica, sans-serif;
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
 	font-size: 2rem;
-	line-height: 1.1em;
+	line-height: 1em;
+	font-weight: 500;
 }
 
 
 /* Desktop Media Query */
 @media screen and (min-width: 52rem) {
 	.t-min {
-		font-size: .9rem;
+		font-size: .75rem;
 	}
 
 	.t-caption {
@@ -104,29 +110,26 @@
 	}
 
 	.t-body {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		line-height: 1.3em;
 	}
 	
 	.t-h5 {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 	
 	.t-h4 {
-		font-size: 1.35rem;
+		font-size: 1.3rem;
 		line-height: 1.3em;
 	}
 
-	.t-h3 {
-		font-size: 2rem;
-	}
-
+	.t-h3,
 	.t-h2 {
-		font-size: 2.3rem;
+		font-size: 2rem;
 		line-height: 1.1em;
 	}
 
 	.t-h1 {
-		font-size: 3.3rem;
+		font-size: 3rem;
 	}
 }
