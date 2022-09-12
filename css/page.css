@@ -313,8 +313,8 @@
 
 .page-mission_list {
     padding-left: 0;
-    list-style: none;
-    counter-reset: item;
+    /* list-style: none;
+    counter-reset: item; */
 }
 
 .page-mission_list li {
@@ -325,14 +325,16 @@
     margin-bottom: 1em;
 }
 
-.page-mission_list li:before {
-    content: counter(item);
-    position: absolute;
+.page-mission_list li::marker {
+    /* content: counter(item); */
+    transform: translate(30px);
     top: 0;
     left: 0;
 }
 
-/* Desktop Media Query */
+/* 
+    Desktop Media Query 
+*/
 @media screen and (min-width: 52rem) {
     .page-mission > * {
         grid-column: 7/-3;
@@ -342,6 +344,7 @@
         padding-left: var(--columnDesktop);
     }
 }
+
 /* 
     Team
 */
