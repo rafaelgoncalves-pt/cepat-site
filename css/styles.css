@@ -1,3 +1,12 @@
+:root {
+    --primaryColor: #b0b5b4;
+    --secondaryColor: #f0f0f0;
+    --trecearyColor: #201e1c;
+
+    --columnMobile: calc(calc(100vw - 84px) / 5 );
+    --columnDesktop: calc(calc(100vw - 238px) / 16 );
+}
+
 /* 
     Colors (c)
 */
@@ -13,12 +22,30 @@
     color: rgb(163, 163, 163);
 }
 
+.c-white {
+    color: whitesmoke;
+}
+
 .c-gray {
     color: rgb(163, 163, 163);
 }
 
 .c-lightgray {
     color: rgb(163, 163, 163);
+}
+
+/* 
+    Elements
+*/
+a.button {
+    display: flex;
+    width: fit-content;
+    padding: .5rem .7rem;
+    border: 2px solid black;
+}
+
+a.b-invert {
+    border: 2px solid #f0f0f0;
 }
 
 /* 
@@ -31,6 +58,10 @@
 
 .block {
     display: block;
+}
+
+.hide {
+    display: none;
 }
 
 .flex {
@@ -54,53 +85,66 @@
     justify-content: center;
 }
 
-
 /* 
     Padding 
 */
+.pad-xxs {
+    padding: 1rem 0;
+}
 
 .pad-xs {
-    padding: 16px;
+    padding: 1rem 14px;
 }
 
-.pad-s {
-    padding: 20px;
-}
-
+.pad-s,
 .pad-m {
-    padding: 32px;
+    padding: 1.5rem 14px 6rem;
 }
 
 .pad-l {
-    padding: 48px;
+    padding: 48px 14px;
 }
 
 .pad-xl {
-    padding: 64px;
+    padding: 8rem 14px;
 }
 
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
+    .pad-s {
+        padding: 2.5rem 14px 8rem;
+    }
+
+    .pad-m {
+        padding: 5rem 14px 12rem;
+    }
+
+    .pad-xl {
+        padding: 12.5rem 14px;
+    }
+}
 /* 
     Margins 
 */
 
 .mar-xs {
-    margin: 12px;
+    margin: 1rem 0 2rem;
 }
 
 .mar-s {
-    margin: 16px;
+    margin: 1.5rem 0;
 }
 
 .mar-m {
-    margin: 32px;
+    margin: 2rem 0;
 }
 
 .mar-l {
-    margin: 48px;
+    margin: 4rem 0 5rem;
 }
 
 .mar-xl {
-    margin: 64px;
+    margin: 3rem 0;
 }
 
 .mar-top-xs {
@@ -109,6 +153,13 @@
 
 .mar-top-s {
     margin-top: 1rem;
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
+    .mar-l {
+        margin: 3rem 0;
+    }
 }
 
 /* 
@@ -132,3 +183,5 @@
     from { opacity: 0 }
     to { opacity: 1}
 }
+
+

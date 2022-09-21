@@ -1,6 +1,21 @@
 /* 
 	Type Faces
 */
+@font-face {
+	font-family: CooperHewitt;
+	src: url("../fonts/CooperHewitt-Medium.woff") format("woff"), url("../fonts/CooperHewitt-Medium.eot") format("eot");
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: CooperHewitt;
+	src: url("../fonts/CooperHewitt-Semibold.woff") format("woff"), url("../fonts/CooperHewitt-Semibold.eot") format("eot");
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: normal;
+}
 
 /* 
 	Text
@@ -39,57 +54,62 @@
 */
 
 .t-min {
+	font-family: 'Roboto Mono', monospace;
+	font-size: .8rem;
+	line-height: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.t-small {
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
 	font-size: 0.6rem;
-	line-height: 1.1em;
+	line-height: 1.25em;
+	font-weight: 600;
 }
 
 .t-caption {
-	font-size: 0.80rem;
-	line-height: 1.1em;
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+	font-size: 0.8rem;
+	line-height: 1.25em;
+	font-weight: 600;
 }
 
 .t-body {
-	font-size: 0.95rem;
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+	font-size: 1rem;
 	line-height: 1.25em;
+	font-weight: 600;
 }
 
-.t-h2 {
-	font-size: 1.35rem;
+.t-h5,
+.t-h4 {
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+	font-size: 1.25rem;
 	line-height: 1.25em;
+	font-weight: 500;
+}
+
+.t-h3,
+.t-h2 {
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+	font-size: 1.8rem;
+	line-height: 1.15em;
+	font-weight: 500;
 }
 
 .t-h1 {
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
 	font-size: 2rem;
-	line-height: 1.15em;
+	line-height: 1em;
+	font-weight: 500;
 }
 
-/* Desktop */
-@media only screen and (min-width: 64rem) {
+
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
 	.t-min {
-		font-size: 0.6rem;
-	}
-
-	.t-caption {
-		font-size: 0.8rem;
-	}
-
-	.t-body {
-		font-size: 1.1rem;
-	}
-
-	.t-h2 {
-		font-size: 1.35rem;
-	}
-
-	.t-h1 {
-		font-size: 2.5rem;
-	}
-}
-
-/* Desktop Large */
-@media only screen and (min-width: 100rem) {
-	.t-min {
-		font-size: 0.75rem;
+		font-size: .75rem;
 	}
 
 	.t-caption {
@@ -97,14 +117,26 @@
 	}
 
 	.t-body {
-		font-size: 1.25rem;
+		font-size: 1rem;
+		line-height: 1.3em;
+	}
+	
+	.t-h5 {
+		font-size: 1.5rem;
+	}
+	
+	.t-h4 {
+		font-size: 1.3rem;
+		line-height: 1.3em;
 	}
 
+	.t-h3,
 	.t-h2 {
-		font-size: 1.5rem;
+		font-size: 2rem;
+		line-height: 1.1em;
 	}
 
 	.t-h1 {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 }

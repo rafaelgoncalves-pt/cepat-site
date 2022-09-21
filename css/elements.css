@@ -8,6 +8,7 @@
 html {
     min-height: 100%;
     position: relative;
+    font-size: 18px;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     min-height: 100%;
     font-family: neue-haas-grotesk-text, Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     font-weight: 400;
+    background-color: var(--primaryColor);
 }
 
 h1, h2, h3, h4, h5, h6, p, caption, a {
@@ -55,6 +57,7 @@ ul li, ul dt, ul dd, dl li, dl dt, dl dd {
     margin: 0;
     display: block;
     height: fit-content;
+    line-height: 100%;
 }
 
 dl dd {
