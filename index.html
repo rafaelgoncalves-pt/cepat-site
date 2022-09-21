@@ -3,18 +3,49 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Centro de Estudos do Património</title>
-  <meta name="description" content="">
+  <title>CEPAT | Centro de Estudos do Património</title>
+  <meta name="image" content=""/>
+  <meta name="description" content="No Centro de Estudos do Património aliamos tecnologia e património construído, por um futuro sustentável e eficiente para a indústria da construção.">
+  <meta property="keywords" content="Construção, Obras Públicas, Engenharia Civil, Obras Privadas, Reabilitação, Infra-estrutura, Durabilidade, Ecologia"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png" />
+
+  <meta property="og:title" content="CEPAT | Centro de Estudos do Património">
+  <meta property="og:description" content="No Centro de Estudos do Património aliamos tecnologia e património construído, por um futuro sustentável e eficiente para a indústria da construção.">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
+  <meta property="og:keywords" content="Construção, Obras Públicas, Engenharia Civil, Obras Privadas, Reabilitação, Infra-estrutura, Durabilidade, Ecologia"/>
+  <meta property="og:locale" content="pt_PT"/>
+  
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="CEPAT | Centro de Estudos do Património">
+  <meta property="twitter:description" content="No Centro de Estudos do Património aliamos tecnologia e património construído, por um futuro sustentável e eficiente para a indústria da construção."/>
+  <meta property="twitter:image" content=""/>
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -39,8 +70,10 @@
 
 <body>
   <header class="header grid-xl pad-xs">
-    <object class="header-logo dark" data="img/cepat-logo_dark.svg"></object>
-    <object class="header-logo light" data="img/cepat-logo_light.svg"></object>
+    <div class="header-logo">
+      <object class="dark" data="img/cepat-logo_dark.svg"></object>
+      <object class="light" data="img/cepat-logo_light.svg"></object>
+    </div>
     <nav class="header-nav pad-xs" role="Primary">
       <ul class="grid-l">
         <li><a class="t-caption c-secondary" href="#about">Sobre</a></li>
@@ -88,16 +121,16 @@
         <h2 class="t-h1 c-secondary">Projeto Adaptive</h2>
         <div class="project-backdrop_details">
           <p class="t-h4 t-uppercase c-secondary">Abril 2021</p>
-          <a href="" target="_blank" class="t-h4 c-secondary">Visitar website</a>
+          <a href="https://projeto-adaptive.com/" target="_blank" class="t-h4 c-secondary">Visitar website</a>
         </div>
         <p class="t-h2 c-secondary">Sistema de Produção avançada para a Reabilitação Sustentável e Produtiva de Coberturas</p>
         <div class="text-wrapper">
-          <p class="t-h4 c-secondary">Investigação para a&#x2004</p>
-          <p>
-            <span class="t-h4 c-secondary">Produtividade</span><br>
-            <span class="t-h4 c-secondary">Sustetabilidade</span><br>
+          <p class="t-h4 c-secondary">Investigação para&#x2004</p>
+          <div class="slotmachine" data-index="0">
+            <span class="t-h4 c-secondary">Produtividade</span>
+            <span class="t-h4 c-secondary">Sustetabilidade</span>
             <span class="t-h4 c-secondary">Uso eficiente de água</span>
-          </p>
+          </div>
         </div>
       </div>
 
@@ -191,28 +224,34 @@
     <div class="footer-partners">
       <ul>
         <li class="t-min c-primary" style="opacity: .5;">Parceiros Tecnológicos</li>
-        <img src="img/partners/utad.png" alt="">
-        <img src="img/partners/politecnico-viseu.png" alt="">
-        <img src="img/partners/graniparalelo.png" alt="">
-        <img src="img/partners/cicon.png" alt="">
+        <img src="img/partners/arcp.svg" alt="Associação Rede de Competência em Polímeros Logo">
+        <img src="img/partners/cicon.svg" alt="CICON Logo">
+        <img src="img/partners/ipv.svg" alt="IPV Logo">
+        <img src="img/partners/piep.svg" alt="PIEP Logp">
+        <img src="img/partners/secundino-queiros.svg" alt="Secundino Queirós Logo">
+        <img src="img/partners/utad.svg" alt="UTAD Logo">
       </ul>
       <ul>
         <li class="t-min c-primary" style="opacity: .5;">Outros Parceiros</li>
-        <img src="img/partners/utad.png" alt="">
-        <img src="img/partners/politecnico-viseu.png" alt="">
-        <img src="img/partners/graniparalelo.png" alt="">
-        <img src="img/partners/cicon.png" alt="">
+        <img src="img/partners/alto.svg" alt="Alto Logo">
+        <img src="img/partners/cudell.svg" alt="Cudell Logo">
+        <img src="img/partners/geberit.svg" alt="Geberit Logo">
+        <img src="img/partners/gofibra.svg" alt="Go Fibra Logo">
+        <img src="img/partners/h3r.svg" alt="H3R Logo">
+        <img src="img/partners/ip.svg" alt="IP Logo">
+        <img src="img/partners/momel.svg" alt="Momel Logo">
       </ul>
     </div>
 
     <div class="footer-footnotes grid-xl">
-      <p class="t-caption c-primary">©2022, Centro de Estudos do Património<br><span class="t-caption c-primary" style="opacity: .5;">Todos os direitos reservados</span></p>
-      <p class="t-caption c-primary">Web Design e Desenvolvimento<br><span class="t-caption c-primary" style="opacity: .5;">Rafael Gonçalves e Pedro Meireis</span></p>
+      <p class="t-small c-primary">©2022, Centro de Estudos do Património <span style="opacity: .5;">Todos os direitos reservados</span></p>
+      <p class="t-small c-primary">Web Design e Desenvolvimento <span style="opacity: .5;">Rafael Gonçalves e Pedro Meireis</span></p>
     </div>
   </footer>
-  <footer>
 
-  </footer>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/SplitText.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
-<script src="js/main.js"></script>
 </html>

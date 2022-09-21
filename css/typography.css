@@ -3,7 +3,7 @@
 */
 @font-face {
 	font-family: CooperHewitt;
-	src: url(../fonts/CooperHewitt-Medium.woff) format(woff), url(../fonts/CooperHewitt-Medium.eot) format(eot);
+	src: url("../fonts/CooperHewitt-Medium.woff") format("woff"), url("../fonts/CooperHewitt-Medium.eot") format("eot");
 	font-style: normal;
 	font-weight: 500;
 	font-stretch: normal;
@@ -11,7 +11,7 @@
 
 @font-face {
 	font-family: CooperHewitt;
-	src: url(../fonts/CooperHewitt-Semibold.woff) format(woff), url(../fonts/CooperHewitt-Semibold.eot) format(eot);
+	src: url("../fonts/CooperHewitt-Semibold.woff") format("woff"), url("../fonts/CooperHewitt-Semibold.eot") format("eot");
 	font-style: normal;
 	font-weight: 600;
 	font-stretch: normal;
@@ -59,6 +59,13 @@
 	line-height: 1em;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.t-small {
+	font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+	font-size: 0.6rem;
+	line-height: 1.25em;
+	font-weight: 600;
 }
 
 .t-caption {
