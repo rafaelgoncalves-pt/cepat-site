@@ -525,3 +525,25 @@
         grid-column: 7/-2;
     }
 }
+
+
+/* Hover */
+@media (hover: hover) {
+    .header-nav a,
+    .project-backdrop_details a {
+        transition: 300ms;
+    }
+
+    .header-nav ul:hover a {
+        opacity: .25;
+    }
+
+    .header-nav a:hover,
+    .project-backdrop_details a:hover {
+        opacity: 1 !important;
+    }
+
+    .page-team_person a:hover {
+        text-decoration: underline;
+    }
+}
