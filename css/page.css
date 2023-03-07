@@ -143,6 +143,12 @@
     grid-column: 1/-1;
 }
 
+.page-intro h3,
+.page-intro p,
+.page-intro ul {
+    margin-bottom: 2rem;
+}
+
 .page-intro ul {
     margin: 4rem 0 1rem;
 }
@@ -155,13 +161,11 @@
 /* Desktop Media Query */
 @media screen and (min-width: 52rem) {
     .page-intro h3 {
-        grid-column: 7/-1;
-        grid-row: 1;
+        grid-column: 7/-2;
     }
 
     .page-intro p {
         grid-column: 7/-2;
-        grid-row: 2;
     }
 
     .page-intro ul {
@@ -177,9 +181,58 @@
 }
 
 /* 
+    Comparison Section 
+*/
+
+.comparison-section {
+    position: relative;
+    padding-bottom: 40%;
+    margin-bottom: 3rem;
+    /* to maintain aspect ratio (responsive!) */
+}
+
+.comparison-image {
+    width: 100%;
+    height: 100%;
+}
+
+.after-image {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    transform: translate(100%, 0px);
+}
+
+.after-image img {
+    transform: translate(-100%, 0px);
+}
+
+.comparison-image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: contain;
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
+    .comparison-section {
+        padding-left: calc(35vw + 2rem);
+    }
+    
+    .comparison-image img {
+        object-position: 0% 0%;
+    }
+}
+
+/* 
     Project
 */
-/* Backdrop */
+
+/* 
+    Backdrop 
+*/
 .project-backdrop {
     background-image: url(../img/project/backdrop.png);
     background-size: cover;
