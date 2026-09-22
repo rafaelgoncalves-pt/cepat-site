@@ -180,8 +180,34 @@
 
 }
 
-/* 
-    Comparison Section 
+/* Bulleted lists inside the intro copy */
+.page-intro .page-intro_list {
+    grid-column: 1/-1;
+    margin: 0 0 2rem;
+    padding-left: 0;
+}
+
+.page-intro .page-intro_list li {
+    grid-column: 1/-1;
+    margin: 0 0 1em;
+    list-style-position: inside;
+    padding-left: 1.1em;
+    text-indent: calc(1.1em * -1);
+}
+
+.page-intro .page-intro_list strong {
+    font-weight: 600;
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 52rem) {
+    .page-intro .page-intro_list {
+        grid-column: 7/-2;
+    }
+}
+
+/*
+    Comparison Section
 */
 
 .comparison-section {
